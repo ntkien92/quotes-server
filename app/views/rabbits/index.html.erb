@@ -1,0 +1,26 @@
+<div class="table-responsive ">
+  <table class="table table-hover">
+    <th>
+      Id
+    </th>
+    <th>
+      title
+    </th>
+    <th>
+      01
+    </th>
+    <% @rabbits.each do |rabbit| %>
+    <tr>
+      <td>
+        <%= rabbit.id %>
+      </td>
+      <td>
+        <%= rabbit.title %>
+      </td>
+      <td>
+        <%= rabbit.content %>
+      </td>
+    </tr>
+    <% end %>
+  </table>
+</div>
