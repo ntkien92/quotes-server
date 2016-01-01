@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  get 'quotes/index'
+  get 'quotes/random'
+
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
   api_version(:module => "v1", :path => {value: 'v1'}) do
