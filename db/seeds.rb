@@ -5,9 +5,5 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
-30.times do
-  Post.create(title: FFaker::Sport.name, description: FFaker::Lorem.paragraph)
-end
-30.times do
-  Rabbit.create(title: FFaker::Sport.name, content: FFaker::Lorem.paragraph)
-end
+
+AdminUser.create!(email: 'ntkien92@gmail.com', password: '12345678', password_confirmation: '12345678')

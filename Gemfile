@@ -27,7 +27,9 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 # Use Unicorn as the app server
 # gem 'unicorn'
-
+gem 'devise'
+# Gemfile in Rails >= 3.1
+gem 'activeadmin', github: 'gregbell/active_admin'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 # gem versionist
