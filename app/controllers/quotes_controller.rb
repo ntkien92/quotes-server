@@ -3,7 +3,7 @@ class QuotesController < ApplicationController
   end
 
   def random
-    @quote = Quote.all.sample
+    @quote = Quote.order('RANDOM()').limit(1)
     render json: @quote
   end
 end
