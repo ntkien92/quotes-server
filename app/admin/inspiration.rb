@@ -1,7 +1,9 @@
 ActiveAdmin.register Inspiration do
   permit_params :title, :content, :link_url
-
+  csv_importable :columns => [:id, :title, :link_url],
+                              :import_unique_key => :id
   index do
+    column :id
     column :title
     column :content
     column "Image" do |inspiration|

@@ -42,6 +42,8 @@ gem 'kaminari'
 gem 'pry'
 
 gem 'ffaker'
+
+gem 'active_admin_csv_import'
 group :development, :test do
   gem 'byebug'
 end
