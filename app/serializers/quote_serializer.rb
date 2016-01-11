@@ -1,3 +1,3 @@
 class QuoteSerializer < ActiveModel::Serializer
-  attributes :message, :image, :author
+  attributes :id, :image, :type_quote
 end

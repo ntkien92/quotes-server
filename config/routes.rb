@@ -1,6 +1,4 @@
 Rails.application.routes.draw do
-  get 'quotes/index'
-  get 'quotes/random'
 
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
@@ -8,6 +6,7 @@ Rails.application.routes.draw do
     resources :posts, only: [:index, :show]
     resources :rabbits, only: [:index]
     resources :inspirations, only: [:index]
+    resources :quotes, only: [:index]
   end
 
   resources :rabbits
