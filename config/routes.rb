@@ -4,5 +4,6 @@ Rails.application.routes.draw do
   ActiveAdmin.routes(self)
   api_version(:module => "v1", :path => {value: 'v1'}) do
     resources :quotes, only: [:index]
+    resources :quote_versions, only: [:index]
   end
 end
